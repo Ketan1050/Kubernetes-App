@@ -1,0 +1,29 @@
+{
+  "name": "kubelab-infrastructure-gateway",
+  "version": "1.0.0",
+  "description": "KubeLab Terminal Gateway, Ephemeral Namespace Provisioner, and Lab Evaluator",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/terminal-gateway/server.js",
+    "dev": "tsx watch terminal-gateway/server.ts",
+    "test": "tsc && node dist/test/evaluator.test.js"
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "@types/uuid": "^9.0.8",
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.9.3",
+    "typescript": "^5.4.5"
+  }
+}
